@@ -554,50 +554,50 @@ export default function WorkDetail() {
             gap: "clamp(1rem, 2vw, 1.5rem)",
           }}
         >
-          {/* VIDEO */}
-          {project.videoUrl && (
-            <div
-              className="gsap-img"
-              style={{
-                position: "relative",
-                borderRadius: 12,
-                overflow: "hidden",
-                background: "#111",
-                aspectRatio: "16/9",
-              }}
-            >
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-              >
-                <source src={project.videoUrl} type="video/mp4" />
-              </video>
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  background: "linear-gradient(to bottom, transparent 60%, rgba(10,10,10,0.6))",
-                  pointerEvents: "none",
-                }}
-              />
-              <div style={{ position: "absolute", bottom: "1.2rem", left: "1.4rem" }}>
-                <span
-                  className="font-mono"
-                  style={{
-                    fontSize: "0.6rem",
-                    letterSpacing: "0.2em",
-                    textTransform: "uppercase",
-                    color: "rgba(240,237,232,0.4)",
-                  }}
-                >
-                  Project Overview — {project.year}
-                </span>
-              </div>
-            </div>
-          )}
+         {/* VIDEO */}
+{project.videoUrl && (
+  <div
+    className="gsap-img"
+    style={{
+      position: "relative",
+      borderRadius: 12,
+      overflow: "hidden",
+      background: "#111",
+      aspectRatio: "16/9",
+    }}
+  >
+    <video
+      key={project.videoUrl}
+      src={project.videoUrl}
+      autoPlay
+      muted
+      loop
+      playsInline
+      style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+    />
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        background: "linear-gradient(to bottom, transparent 60%, rgba(10,10,10,0.6))",
+        pointerEvents: "none",
+      }}
+    />
+    <div style={{ position: "absolute", bottom: "1.2rem", left: "1.4rem" }}>
+      <span
+        className="font-mono"
+        style={{
+          fontSize: "0.6rem",
+          letterSpacing: "0.2em",
+          textTransform: "uppercase",
+          color: "rgba(240,237,232,0.4)",
+        }}
+      >
+        Project Overview — {project.year}
+      </span>
+    </div>
+  </div>
+)}
 
           {/* IMAGES 2×2 */}
           <div
