@@ -9,7 +9,7 @@ export const projects = [
     size: "medium",
     image: "/images/baranda4.png",
     srcset: "/images/baranda4.png, ",
-    videoUrl: "/videos/baranda.mp4  ",
+    videoUrl: "/videos/baranda.mp4",
     visitUrl: "https://barandarestro.com/",
     about: "Baranda Restro & Events is an authentic Nepali dining and hospitality brand nestled in the scenic hills of Lamjung, Nepal. We built a full digital presence that captures their warm, community-rooted identity  from the restaurant and coffee point to event halls and lodge stays all presented through an immersive, nature-inspired web experience.",
     members: [
@@ -307,7 +307,7 @@ export const projects = [
     size: "medium",
     image: "/images/bedbreak.png",
     srcset: "/images/bedbreak2.png",
-    videoUrl: "/videos/bed&break.mp4",
+    videoUrl: "/videos/bedbreak.mp4",
     visitUrl: "#",
     about: "A modern international hotel booking and listing platform that connects travellers with hotels worldwide featuring real-time availability, smart filtering, seamless booking flows, and secure payments. Built to compete with the best in the industry, delivering a frictionless experience from search to checkout.",
     members: [{ name: "Isneha Manandhar", handle: "@isneha", role: "Development" }],
