@@ -30,9 +30,9 @@ const Footer = () => {
 
           {/* Let's Chat */}
           <div className="mb-20 md:mb-32">
-            <a
-              href="https://calendar.notion.so/meet/nicomenezes/chat"
-              target="_blank"
+            <div
+             
+          
               rel="noopener noreferrer"
               className="group inline-block"
             >
@@ -40,7 +40,7 @@ const Footer = () => {
                 LET'S CHAT
               </h2>
               <div className="h-[2px] bg-white mt-4 md:mt-6 w-0 group-hover:w-full transition-all duration-700 ease-out" />
-            </a>
+            </div>
           </div>
 
           {/* Bottom Links — 2×2 on mobile, 4-col on lg */}
@@ -77,22 +77,22 @@ const Footer = () => {
                 Contact
               </h3>
               <nav className="flex flex-col gap-4">
-                {[
-                  { href: 'mailto:isnehadev26@gmail.com', label: 'E-mail' },
-                  { href: 'https://wa.me/9806640105', label: 'Whatsapp' },
-                ].map(({ href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white/70 hover:text-white transition-colors duration-300 text-base md:text-lg group flex items-center gap-2"
-                  >
-                    <span className="w-0 group-hover:w-4 h-[1px] bg-white transition-all duration-300" />
-                    {label}
-                  </a>
-                ))}
-              </nav>
+    {[
+      { href: 'mailto:isnehadev26@gmail.com', label: 'E-mail' },
+      { href: 'https://wa.me/9806614220', label: 'WhatsApp' },
+    ].map(({ href, label }) => (
+      <a
+        key={label}
+        href={href}
+        target={href.startsWith('http') ? '_blank' : undefined}
+        rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        className="text-white/70 hover:text-white transition-colors duration-300 text-base md:text-lg group flex items-center gap-2"
+      >
+        <span className="w-0 group-hover:w-4 h-[1px] bg-white transition-all duration-300" />
+        {label}
+      </a>
+    ))}
+  </nav>
             </div>
 
             {/* Location */}
