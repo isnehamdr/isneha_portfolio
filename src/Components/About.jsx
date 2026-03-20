@@ -65,59 +65,59 @@ const About = () => {
   return (
     <div ref={wrapperRef} className="relative">
 
-      {/* ABOUT — pinned section */}
-      <section ref={aboutRef} className="relative z-10 bg-white text-[#01010e] min-h-screen">
-        <div className="absolute inset-0 pointer-events-none grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9">
-          {[...Array(9)].map((_, i) => (
-            <div
-              key={i}
-              className={`border-r border-gray-200 h-full ${i >= 4 ? 'hidden sm:block' : ''} ${i >= 6 ? 'hidden lg:block' : ''}`}
-            />
-          ))}
+     {/* ABOUT — pinned section */}
+<section ref={aboutRef} className="relative z-10 bg-white text-[#01010e] min-h-screen">
+  <div className="absolute inset-0 pointer-events-none grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9">
+    {[...Array(9)].map((_, i) => (
+      <div
+        key={i}
+        className={`border-r border-gray-200 h-full ${i >= 4 ? 'hidden sm:block' : ''} ${i >= 6 ? 'hidden lg:block' : ''}`}
+      />
+    ))}
+  </div>
+
+  <div className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-10 sm:py-20 lg:py-24">
+    <div className="w-full max-w-[1400px] mx-auto">
+      <div className="flex flex-col items-center text-center gap-1 sm:gap-2 lg:gap-3">
+
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
+          <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-bold leading-tight">
+            Isneha Manandhar is a Nepal-based
+          </h2>
+          <img src="/images/person.jpg" alt="Isneha Manandhar"
+            className="hidden lg:block w-24 h-24 rounded-full object-cover shadow-xl shrink-0" loading="lazy" />
         </div>
 
-        <div className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-10 sm:py-20 lg:py-24">
-          <div className="w-full max-w-[1400px] mx-auto">
-            <div className="flex flex-col items-center text-center gap-1 sm:gap-2 lg:gap-3">
-
-              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
-                <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-bold leading-tight">
-                  Isneha Manandhar is a Nepal-based
-                </h2>
-                <img src="/images/person.jpg" alt="Isneha Manandhar"
-                  className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full object-cover shadow-xl shrink-0" loading="lazy" />
-              </div>
-
-              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
-                <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-bold leading-tight">Full Stack Developer</h2>
-                <img src="/images/fullstack.png" alt="Full Stack"
-                  className="w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 shrink-0" loading="lazy" />
-                <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-bold leading-tight text-[#c5c5c5]">&amp; SEO Optimizer</h2>
-              </div>
-
-              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
-                <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-light leading-tight text-[#c5c5c5]">who crafts</h2>
-                <img src="https://cdn.prod.website-files.com/6698059876092bcd6352569a/669991462bf76217807db9c6_DSC_9785.webp" alt="Crafting"
-                  className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto rounded-lg object-cover shadow-xl shrink-0" loading="lazy" />
-                <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-light leading-tight text-[#c5c5c5]">digital experiences</h2>
-              </div>
-
-              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
-                <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-light leading-tight text-[#c5c5c5]">from pixel-perfect frontends</h2>
-                <img src="https://cdn.prod.website-files.com/6698059876092bcd6352569a/669991bb314d4830350b260f_Frame%2044390.webp" alt="Frontend"
-                  className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto rounded-lg object-cover shadow-xl shrink-0" loading="lazy" />
-              </div>
-
-              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
-                <img src="https://cdn.prod.website-files.com/6698059876092bcd6352569a/669991db1dc4aa4d8d78e374_Frame%2044391.webp" alt="Backend"
-                  className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto rounded-lg object-cover shadow-xl shrink-0" loading="lazy" />
-                <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-light leading-tight text-[#c5c5c5]">to scalable backends</h2>
-              </div>
-
-            </div>
-          </div>
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
+          <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-bold leading-tight">Full Stack Developer</h2>
+          <img src="/images/fullstack.png" alt="Full Stack"
+            className="hidden lg:block w-14 h-14 shrink-0" loading="lazy" />
+          <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-bold leading-tight text-[#c5c5c5]">&amp; SEO Optimizer</h2>
         </div>
-      </section>
+
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
+          <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-light leading-tight text-[#c5c5c5]">who crafts</h2>
+          <img src="https://cdn.prod.website-files.com/6698059876092bcd6352569a/669991462bf76217807db9c6_DSC_9785.webp" alt="Crafting"
+            className="hidden lg:block h-24 w-auto rounded-lg object-cover shadow-xl shrink-0" loading="lazy" />
+          <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-light leading-tight text-[#c5c5c5]">digital experiences</h2>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
+          <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-light leading-tight text-[#c5c5c5]">from pixel-perfect frontends</h2>
+          <img src="https://cdn.prod.website-files.com/6698059876092bcd6352569a/669991bb314d4830350b260f_Frame%2044390.webp" alt="Frontend"
+            className="hidden lg:block h-24 w-auto rounded-lg object-cover shadow-xl shrink-0" loading="lazy" />
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-x-5">
+          <img src="https://cdn.prod.website-files.com/6698059876092bcd6352569a/669991db1dc4aa4d8d78e374_Frame%2044391.webp" alt="Backend"
+            className="hidden lg:block h-24 w-auto rounded-lg object-cover shadow-xl shrink-0" loading="lazy" />
+          <h2 className="text-[clamp(1.4rem,3.8vw,4rem)] font-light leading-tight text-[#c5c5c5]">to scalable backends</h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* PROJECTS — scroll reveal slides */}
       <section ref={projectsRef} className="relative z-20" style={{ height: `${featuredProjects.length * 100}vh` }}>

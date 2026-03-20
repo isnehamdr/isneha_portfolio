@@ -122,7 +122,7 @@ const Hero = () => {
       {/* ── Content ──
           Fix: tighten py on mobile (py-12) while keeping sm/lg values untouched.
       */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-28 lg:py-36">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-10 sm:py-28 lg:py-36">
         <div className="flex flex-col items-center text-center">
 
           <motion.div
@@ -134,7 +134,7 @@ const Hero = () => {
             <h1
               className="
                 font-display leading-none text-primary tracking-tight
-                text-[clamp(3.2rem,12vw,12rem)]
+                text-[clamp(2.6rem,12vw,7.2rem)] sm:text-[clamp(3.2rem,12vw,12rem)]
               "
             >
               ISNEHA
@@ -150,7 +150,7 @@ const Hero = () => {
             <p
               className="
                 text-gray-400 uppercase tracking-widest
-                text-[0.6rem] sm:text-xs md:text-sm lg:text-base
+                text-[0.55rem] sm:text-xs md:text-sm lg:text-base
               "
             >
               Fullstack Developer
@@ -166,7 +166,7 @@ const Hero = () => {
             <h1
               className="
                 font-display leading-none text-primary tracking-tight
-                text-[clamp(3.2rem,12vw,12rem)]
+                text-[clamp(2.6rem,12vw,7.2rem)] sm:text-[clamp(3.2rem,12vw,12rem)]
               "
             >
               MANANDHAR
