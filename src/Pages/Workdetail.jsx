@@ -1305,7 +1305,7 @@ export default function WorkDetail() {
               {project.about}
             </p>
 
-            <div className="gsap-stagger">
+            {/* <div className="gsap-stagger">
               <p className="font-mono" style={{ fontSize: "0.6rem", letterSpacing: "0.2em", color: "rgba(240,237,232,0.25)", textTransform: "uppercase", marginBottom: "1rem", paddingTop: "2rem", borderTop: "1px solid rgba(240,237,232,0.07)" }}>
                 Team
               </p>
@@ -1322,7 +1322,7 @@ export default function WorkDetail() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
 
           <div className="gsap-stagger" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
