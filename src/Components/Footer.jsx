@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import VerticalGridLines from './VerticalGridLines';
 
 const Footer = () => {
   const [time, setTime] = useState('');
@@ -19,11 +20,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-[#01010e] text-white overflow-hidden">
       {/* Grid Lines */}
-      <div className="absolute inset-0 grid grid-cols-9 pointer-events-none z-0">
-        {[...Array(9)].map((_, i) => (
-          <div key={i} className="h-full border-r border-gray-800/50 last:border-r-0" />
-        ))}
-      </div>
+      <VerticalGridLines className="z-0" variant="light" />
 
       <div className="relative z-10 max-w-[1920px] mx-auto px-[5%]">
         <div className="py-16 md:py-24 lg:py-32">

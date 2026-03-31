@@ -96,6 +96,7 @@
 
 
 import React, { useState } from "react";
+import VerticalGridLines from "./VerticalGridLines";
 
 const experiences = [
   {
@@ -144,28 +145,7 @@ const Experience = () => {
       <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap');`}</style>
 
       {/* Vertical grid lines */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          display: "grid",
-          gridTemplateColumns: "repeat(8, 1fr)",
-          pointerEvents: "none",
-          zIndex: 0,
-        }}
-      >
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={i}
-            style={{
-              borderRight: "1px solid #e5e7eb",
-            }}
-          />
-        ))}
-      </div>
+      <VerticalGridLines />
 
       {/* Content */}
       <div

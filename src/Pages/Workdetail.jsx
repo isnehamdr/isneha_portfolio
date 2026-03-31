@@ -934,6 +934,7 @@
 import { useEffect, useRef, useCallback } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import VerticalGridLines from "../Components/VerticalGridLines";
 
 function useGSAP(cb, deps = []) {
   useEffect(() => {
@@ -1189,16 +1190,6 @@ export default function WorkDetail() {
           filter: grayscale(0%);
         }
 
-        .grid-lines {
-          position: fixed; inset: 0;
-          pointer-events: none; z-index: 0;
-          display: grid; grid-template-columns: repeat(9, 1fr);
-        }
-        .grid-line { border-right: 1px solid rgba(240,237,232,0.04); height: 100%; }
-
-        @media (max-width: 639px) { .grid-lines { grid-template-columns: repeat(4, 1fr); } }
-        @media (min-width: 640px) and (max-width: 1023px) { .grid-lines { grid-template-columns: repeat(6, 1fr); } }
-
         @media (max-width: 1023px) {
           .sidebar-el { border-bottom: 1px solid rgba(240,237,232,0.08) !important; }
           .img-grid { grid-template-columns: 1fr !important; }
@@ -1216,11 +1207,7 @@ export default function WorkDetail() {
         }
       `}</style>
 
-      <div className="grid-lines">
-        {[...Array(9)].map((_, i) => (
-          <div key={i} className="grid-line" />
-        ))}
-      </div>
+      <VerticalGridLines position="fixed" variant="light" className="z-0" />
 
       <main
         className="main-layout"

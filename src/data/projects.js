@@ -375,4 +375,23 @@ export const projects = [
      
     ],
   },
+   {
+    id: 20,
+    title: "Newsportal",
+    slug: "Newsportal",
+    category: "Full-Stack Development",
+    year: "2026",
+    size: "medium",
+    image: "/images/shuchikhabar.png",
+    srcset: "/images/shuchikhabar.png",
+    videoUrl: "https://res.cloudinary.com/dw32cwkds/video/upload/v1773915589/modernportfolio_gydg4b.mp4",
+    visitUrl: "https://shuchikhabar.saitsolution.com.np/",
+    about: "A modern portfolio built with GSAP animations, smooth scroll transitions, and a polished responsive UI — designed to be visually striking, user-friendly, and crafted to leave a lasting impression.",
+    members: [{ name: "Isneha Manandhar", handle: "@isneha", role: "Development" }],
+    images: [
+      "/images/shuchikhabar1.png",
+      "/images/shuchikhabar2.png",
+     
+    ],
+  },
 ];

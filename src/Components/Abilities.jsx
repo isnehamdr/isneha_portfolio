@@ -303,6 +303,7 @@
 // }
 
 import { useEffect, useRef, useState } from 'react';
+import VerticalGridLines from './VerticalGridLines';
 
 const abilities = [
   {
@@ -375,11 +376,7 @@ export default function AbilitiesSection() {
       ═══════════════════════════════════════════════ */}
       <section className="hidden sm:block relative bg-white py-20 sm:py-28 lg:py-36 xl:py-44 overflow-hidden">
         {/* Grid Lines */}
-        <div className="absolute inset-0 grid grid-cols-9 pointer-events-none">
-          {[...Array(9)].map((_, i) => (
-            <div key={i} className="border-r border-gray-200 h-full" />
-          ))}
-        </div>
+        <VerticalGridLines />
 
         {/* Content */}
         <div className="relative w-full px-6 sm:px-8 lg:px-12">
@@ -480,11 +477,7 @@ export default function AbilitiesSection() {
       ═══════════════════════════════════════════════ */}
       <section className="sm:hidden relative bg-white py-20 overflow-hidden">
         {/* Grid lines */}
-        <div className="absolute inset-0 grid grid-cols-4 pointer-events-none">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="border-r border-gray-200 h-full" />
-          ))}
-        </div>
+        <VerticalGridLines />
 
         <div className="relative w-full px-5">
           <div className="flex flex-col gap-10">

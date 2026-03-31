@@ -1,6 +1,7 @@
 // components/Works.jsx
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import VerticalGridLines from './VerticalGridLines';
 
 const Works = () => {
   const heroRef = useRef(null);
@@ -20,13 +21,9 @@ const Works = () => {
   }, []);
 
   return (
-    <section ref={heroRef} className="pt-32 pb-16 px-[5%]">
+    <section ref={heroRef} className="relative pt-32 pb-16 px-[5%]">
         {/* Vertical grid lines */}
-        <div className="absolute inset-0 pointer-events-none grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9">
-          {[...Array(9)].map((_, i) => (
-            <div key={i} className="border-r border-gray-200 h-full" />
-          ))}
-        </div>
+        <VerticalGridLines />
       <div className="z-20">
         <div className="hero-works-wrap">
           <h1 className="font-['Nohemi',sans-serif] text-[clamp(4rem,15vw,12rem)] font-bold uppercase leading-[0.9]">

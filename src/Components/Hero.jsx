@@ -185,6 +185,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import VerticalGridLines from './VerticalGridLines';
 
 const Hero = () => {
   const scrollRef = useRef(null);
@@ -206,14 +207,7 @@ const Hero = () => {
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white"
     >
       {/* Grid lines — responsive col count */}
-      <div className="absolute inset-0 grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9 pointer-events-none">
-        {[...Array(9)].map((_, i) => (
-          <div
-            key={i}
-            className={`border-r border-gray-300 h-full ${i >= 4 ? 'hidden sm:block' : ''} ${i >= 6 ? 'hidden lg:block' : ''}`}
-          />
-        ))}
-      </div>
+      <VerticalGridLines />
 
 
       

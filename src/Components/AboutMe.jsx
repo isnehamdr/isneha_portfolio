@@ -243,25 +243,12 @@
 
 // export default AboutMe;
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import VerticalGridLines from './VerticalGridLines';
 
 gsap.registerPlugin(ScrollTrigger);
-
-const GridLines = () => (
-  <div className="absolute inset-0 pointer-events-none grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9">
-    {[...Array(9)].map((_, i) => (
-      <div
-        key={i}
-        className={`border-r border-gray-200 h-full
-          ${i >= 4 ? 'hidden sm:block' : ''}
-          ${i >= 6 ? 'hidden lg:block' : ''}
-        `}
-      />
-    ))}
-  </div>
-);
 
 const AboutMe = () => {
   const sectionRef        = useRef(null);
@@ -425,7 +412,7 @@ const AboutMe = () => {
     <>
       {/* ── HERO SECTION ── */}
       <section ref={sectionRef} className="relative w-full overflow-hidden bg-white">
-        <GridLines />
+        <VerticalGridLines />
 
         {/* FIX 7 — pinRef wraps the entire visible hero so GSAP pins the
             right element. Previously pinRef was on an inner div which caused
@@ -500,7 +487,7 @@ const AboutMe = () => {
         className="w-full bg-white relative py-14 sm:py-20 lg:py-28"
         style={{ zIndex: 30 }}
       >
-        <GridLines />
+        <VerticalGridLines />
 
         <div className="w-full px-5 sm:px-8 lg:px-10 relative z-10">
           {/* FIX 10 — max-w-4xl was off-centre on mobile because of uneven
@@ -522,25 +509,29 @@ const AboutMe = () => {
               systems, I bring products to life across the full stack.
             </p>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              On the frontend I specialize in React, Tailwind CSS, and modern JavaScript —
+              On the frontend I specialize in React, Tailwind CSS, and modern JavaScript
               building fast, responsive interfaces that feel great to use. On the backend I
               work with Node.js, PHP, MySQL, REST APIs, and relational databases to architect
               systems that scale reliably under real-world demand.
             </p>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              I also handle SEO — optimizing site structure, semantic markup, page speed, and
+              I also handle SEO optimizing site structure, semantic markup, page speed, and
               metadata so the products I build don't just look good, they get found. Good
               development and good SEO aren't separate concerns; I treat them as one.
             </p>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              I've worked across hospitality, education, e-commerce, and travel — from boutique
+              I also help with domain and hosting setup from choosing the right plan to
+              configuring DNS, SSL, and deployment so projects go live smoothly.
+            </p>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
+              I've worked across hospitality, education, e-commerce, and travel from boutique
               Himalayan hotels to university management systems, Australian driving academies,
               and international booking platforms.
             </p>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
               Currently open to freelance projects and collaborations worldwide. Whether you
               need a high-performance web application, a conversion-focused site, or a complex
-              management dashboard — I'd love to build something great together.
+              management dashboard I'd love to build something great together.
             </p>
 
             {/* FIX 12 — added a contact CTA at the bottom of the bio.
@@ -556,7 +547,7 @@ const AboutMe = () => {
                   <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
-              <a
+              {/* <a
                 href="/works"
                 className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gray-400 hover:text-[#01010e] transition-colors duration-300"
               >
@@ -564,7 +555,7 @@ const AboutMe = () => {
                 <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
                   <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </a>
+              </a> */}
             </div>
 
           </div>

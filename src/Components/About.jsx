@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useNavigate } from 'react-router-dom';
 import { projects as allProjects } from '../data/projects';
+import VerticalGridLines from './VerticalGridLines';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -67,14 +68,7 @@ const About = () => {
 
      {/* ABOUT — pinned section */}
 <section ref={aboutRef} className="relative z-10 bg-white text-[#01010e] min-h-screen">
-  <div className="absolute inset-0 pointer-events-none grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9">
-    {[...Array(9)].map((_, i) => (
-      <div
-        key={i}
-        className={`border-r border-gray-200 h-full ${i >= 4 ? 'hidden sm:block' : ''} ${i >= 6 ? 'hidden lg:block' : ''}`}
-      />
-    ))}
-  </div>
+  <VerticalGridLines />
 
   <div className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-10 sm:py-20 lg:py-24">
     <div className="w-full max-w-[1400px] mx-auto">

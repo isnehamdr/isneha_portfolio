@@ -351,6 +351,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
 import { projects } from '../data/projects';
+import VerticalGridLines from './VerticalGridLines';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -491,9 +492,7 @@ const WorksGrid = () => {
 
   return (
     <section ref={sectionRef} className="relative w-full bg-white py-16 sm:py-20 lg:py-28 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9">
-        {[...Array(9)].map((_, i) => <div key={i} className="border-r border-stone-300/30 h-full" />)}
-      </div>
+      <VerticalGridLines />
 
       <div className="relative z-10 w-full px-4 sm:px-8 lg:px-14 xl:px-20">
         <div className="flex flex-col gap-12 lg:gap-20">
