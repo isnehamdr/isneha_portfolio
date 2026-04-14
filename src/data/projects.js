@@ -23,30 +23,26 @@ export const projects = [
       "/images/baranda3.png",
     ],
   },
-  {
-    id: 2,
-    title: "Stella",
-    slug: "stella",
-    category: "Fullstack Development",
+   {
+    id: 20,
+    title: "Newsportal",
+    slug: "Newsportal",
+    category: "Full-Stack Development",
     year: "2026",
-    size: "Large",
-    image: "/images/steall2.png",
-    srcset: "/images/steall2.png",
-    videoUrl: "https://res.cloudinary.com/dw32cwkds/video/upload/v1773915611/stella_r1oet8.mp4",
-    visitUrl: "",
-    about: "Stella Island is an adultsonly 5-star luxury resort and spa nestled in Crete, Greece built around a sprawling lagoon pool that gives guests the sensation of floating on water. We crafted a digital experience as refined as the resort itself, showcasing their overwater bungalows, signature gastronomy, wellness offerings, and celebration spaces through an immersive, elegance-first web presence.",
-    members: [
-      { name: "Isneha Manandhar", handle: "@isneha", role: "Development" },
-      { name: "Design Team", handle: "@designteam", role: "UI/UX Design" },
-    ],
+    size: "medium",
+    image: "/images/shuchikhabar.png",
+    srcset: "/images/shuchikhabar.png",
+    videoUrl: "https://res.cloudinary.com/dw32cwkds/video/upload/v1773915589/modernportfolio_gydg4b.mp4",
+    visitUrl: "https://shuchikhabar.saitsolution.com.np/",
+    about: "A modern portfolio built with GSAP animations, smooth scroll transitions, and a polished responsive UI — designed to be visually striking, user-friendly, and crafted to leave a lasting impression.",
+    members: [{ name: "Isneha Manandhar", handle: "@isneha", role: "Development" }],
     images: [
-      "/images/stella1.png",
-      "/images/stella3.png",
-
-      "/images/stella5.png",
-      "/images/stella6.png",
+      "/images/shuchikhabar1.png",
+      "/images/shuchikhabar2.png",
+     
     ],
   },
+
   {
     id: 3,
     title: "RoonApparel ",
@@ -72,6 +68,32 @@ export const projects = [
    
     ],
   },
+
+  {
+    id: 2,
+    title: "Stella",
+    slug: "stella",
+    category: "Fullstack Development",
+    year: "2026",
+    size: "Large",
+    image: "/images/steall2.png",
+    srcset: "/images/steall2.png",
+    videoUrl: "https://res.cloudinary.com/dw32cwkds/video/upload/v1773915611/stella_r1oet8.mp4",
+    visitUrl: "",
+    about: "Stella Island is an adultsonly 5-star luxury resort and spa nestled in Crete, Greece built around a sprawling lagoon pool that gives guests the sensation of floating on water. We crafted a digital experience as refined as the resort itself, showcasing their overwater bungalows, signature gastronomy, wellness offerings, and celebration spaces through an immersive, elegance-first web presence.",
+    members: [
+      { name: "Isneha Manandhar", handle: "@isneha", role: "Development" },
+      { name: "Design Team", handle: "@designteam", role: "UI/UX Design" },
+    ],
+    images: [
+      "/images/stella1.png",
+      "/images/stella3.png",
+
+      "/images/stella5.png",
+      "/images/stella6.png",
+    ],
+  },
+  
   {
     id: 4,
     title: "Alpine",
@@ -376,17 +398,17 @@ export const projects = [
     ],
   },
    {
-    id: 20,
-    title: "Newsportal",
-    slug: "Newsportal",
+    id: 21,
+    title: "Micro and Mega",
+    slug: "Micro and Megal",
     category: "Full-Stack Development",
     year: "2026",
     size: "medium",
     image: "/images/shuchikhabar.png",
     srcset: "/images/shuchikhabar.png",
     videoUrl: "https://res.cloudinary.com/dw32cwkds/video/upload/v1773915589/modernportfolio_gydg4b.mp4",
-    visitUrl: "https://shuchikhabar.saitsolution.com.np/",
-    about: "A modern portfolio built with GSAP animations, smooth scroll transitions, and a polished responsive UI — designed to be visually striking, user-friendly, and crafted to leave a lasting impression.",
+    visitUrl: "https://micronmega.saitsolution.com.np/",
+    about: "Micro and Mega is a modern digital platform designed to present innovative solutions and services with clarity and visual impact. The website combines clean UI, smooth transitions, and responsive design to deliver a seamless user experience across devices. It focuses on showcasing the company’s vision, offerings, and technological capabilities in a structured and engaging way—balancing aesthetics with functionality to create a strong and professional online presence.",
     members: [{ name: "Isneha Manandhar", handle: "@isneha", role: "Development" }],
     images: [
       "/images/shuchikhabar1.png",

@@ -100,7 +100,7 @@ import VerticalGridLines from "./VerticalGridLines";
 
 const experiences = [
   {
-    title: "Full Stack Intern",
+    title: "Full Stack Developer",
     company: "@SaitSolution",
     period: "2025 — Current",
     description:
@@ -111,7 +111,7 @@ const experiences = [
   {
     title: "Student Service Advisor",
     company: "@Infomax College of IT and Management",
-    period: "Jul 2024 — Dec 2024",
+    period: "Jul 2025 — Dec 2025",
     description:
       "Student Service Advisor at Infomax College. Assisted students and facilitated communication between departments.",
     image: "/images/infomax.jpeg",
@@ -120,7 +120,7 @@ const experiences = [
   {
     title: "Test Center Assistant",
     company: "@Infomax College of IT and Management",
-    period: "Dec 2023 — Feb 2024",
+    period: "Dec 2024 — Feb 2025",
     description:
       "Exam operations support. Managed security, coordination, and examiner assistance throughout testing periods.",
     image: "/images/infomax.jpeg",
