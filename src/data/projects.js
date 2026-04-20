@@ -33,7 +33,7 @@ export const projects = [
     image: "/images/shuchikhabar.png",
     srcset: "/images/shuchikhabar.png",
     videoUrl: "https://res.cloudinary.com/dw32cwkds/video/upload/v1773915589/modernportfolio_gydg4b.mp4",
-    visitUrl: "https://shuchikhabar.saitsolution.com.np/",
+    visitUrl: "https://shuchikhabar.com/",
     about: "A modern portfolio built with GSAP animations, smooth scroll transitions, and a polished responsive UI — designed to be visually striking, user-friendly, and crafted to leave a lasting impression.",
     members: [{ name: "Isneha Manandhar", handle: "@isneha", role: "Development" }],
     images: [
