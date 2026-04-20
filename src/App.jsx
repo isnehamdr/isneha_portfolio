@@ -10,6 +10,7 @@ import AboutPage from './Pages/AboutPage'
 import WorksPage from './Pages/WorksPage'
 import Workdetail from './Pages/Workdetail'
 import Cursor from './Components/Cursor'
+import ContactPage from './Pages/ContactPage'
 
 function App() {
   return (
@@ -20,8 +21,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage/>} />
           <Route path="/works" element={<WorksPage />} />
           <Route path="/works/:slug" element={<Workdetail />} />
+        
         </Routes>
         <Footer />
       </BrowserRouter>

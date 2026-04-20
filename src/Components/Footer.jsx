@@ -76,7 +76,7 @@ const Footer = () => {
               <nav className="flex flex-col gap-4">
     {[
       { href: 'mailto:isnehadev26@gmail.com', label: 'E-mail' },
-      { href: 'https://wa.me/9806614220', label: 'WhatsApp' },
+      
     ].map(({ href, label }) => (
       <a
         key={label}
