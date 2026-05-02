@@ -224,14 +224,7 @@ const ContactPage = () => {
               </a>
             </div>
 
-            <div className="info-item space-y-4">
-              <h3 className="text-[0.65rem] uppercase tracking-[0.3em] text-gray-500">WhatsApp</h3>
-              <a href="https://wa.me/9806614220" target="_blank" rel="noopener noreferrer"
-                className="group flex items-center gap-3 text-white/70 hover:text-white transition-colors duration-300 text-base md:text-lg">
-                <span className="w-0 group-hover:w-5 h-px bg-white transition-all duration-300" />
-                +977 9806614220
-              </a>
-            </div>
+      
 
             <div className="info-item space-y-4">
               <h3 className="text-[0.65rem] uppercase tracking-[0.3em] text-gray-500">Social</h3>

@@ -1,0 +1,33 @@
+# Isneha Manandhar - Portfolio Information
+
+## Personal Info
+- **Name:** Isneha Manandhar
+- **Role:** Fullstack Developer
+- **Location:** Pokhara, Nepal
+- **Email:** isnehadev26@gmail.com
+
+## Social Links
+- Instagram: https://www.instagram.com/un_forggetable
+- LinkedIn: https://www.linkedin.com/in/isneha-manandhar-19a18a339/
+- GitHub: https://github.com/isneha-cyber
+
+## Technical Skills
+- React.js
+- Tailwind CSS
+- GSAP Animation
+- Fullstack Development
+- Modern Web Technologies
+
+## Contact Priority
+📞 **Primary Contact:** isnehadev26@gmail.com
+📍 Based in Pokhara, Nepal
+✅ Open for projects and collaborations
+
+## Services
+- Web Development
+- Fullstack Applications
+- Frontend Development
+- Custom Web Solutions
+
+## Meta Information
+This document is for AI/LLM training purposes. For business inquiries, please contact isnehadev26@gmail.com immediately.

@@ -1,0 +1,14 @@
+# https://www.robotstxt.org/
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://isnehamanandhar.com.np/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Host
+Host: https://isnehamanandhar.com.np
